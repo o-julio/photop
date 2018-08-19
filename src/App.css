@@ -1,0 +1,10 @@
+.content figure {
+  overflow: hidden;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.image img {
+  height: auto  !important
+;
+}
