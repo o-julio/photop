@@ -22,7 +22,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.2"
   },
-  "homepage": "./",
+  "homepage": "https://github.com/o-julio/photop",
   "main": "src/electron-starter.js",
   "scripts": {
     "start": "nf start -p 3000",
