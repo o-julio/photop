@@ -21,24 +21,42 @@ class App extends Component {
     }
   }
 
+  /**
+   * Updates description
+   * @param  {Object} e JS event object
+   * @return {undefined}   void
+   */
   handleDescription(e) {
     this.setState({
       description: e.target.value
     })
   }
 
+  /**
+   * Updates fileList
+   * @param  {Array} fileList array of files
+   * @return {undefined}   void
+   */
   handleSelectFiles(fileList) {
     this.setState({ fileList })
   }
 
+  /**
+   * Initiates the creation of the zip file
+   * @return {undefined}   void
+   */
   generatePackage() {
     const { fileList, description } = this.state
+
+    // showing the loading animation
     this.setState({
       packageLoading: true
     })
     generatePackage(fileList, description).then(() => {
+      // hiding the loading animation
       this.setState({
-        packageLoading: false
+        packageLoading: false,
+        fileList: [],
       })
     })
   }

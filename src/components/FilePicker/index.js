@@ -11,6 +11,10 @@ export default class FilePicker extends React.PureComponent {
     this.fileInput = React.createRef()
   }
 
+  /**
+   * Handles files selections, filtering the already existing ones
+   * @return {undefined} void
+   */
   handleChange() {
     const { onSelectFiles, fileList } = this.props
     // avoiding repeated files

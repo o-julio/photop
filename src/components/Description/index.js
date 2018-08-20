@@ -1,6 +1,9 @@
 import React from 'react'
 import Section from '../Section'
 
+/**
+ * Returns an area to input work description
+ */
 class Description extends React.PureComponent {
   render() {
     const { handleChange } = this.props

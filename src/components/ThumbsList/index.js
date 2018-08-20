@@ -9,6 +9,11 @@ export default class ThumbList extends React.PureComponent {
     this.handleRemoveFile = this.handleRemoveFile.bind(this)
   }
 
+  /**
+   * Removes selected file from fileList
+   * @param  {File} fileToRemove selected file for removal
+   * @return {undefined}         void
+   */
   handleRemoveFile(fileToRemove) {
     const { fileList, onSelectFiles } = this.props
     const newFileList = fileList.filter((file) => file !== fileToRemove)

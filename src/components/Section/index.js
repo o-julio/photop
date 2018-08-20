@@ -1,5 +1,8 @@
 import React from 'react'
 
+/**
+ * Generates bulma-style Sections
+ */
 export default class Section extends React.PureComponent {
   render() {
     const { title, subtitle, children } = this.props
